@@ -1,7 +1,18 @@
 #include <stdio.h>
-int main () {
-    
-   printf("woohoo");
-   
-return 0;
+
+int main() {
+	FILE *input;
+	input = fopen("input.txt", "r");
+	
+	while(feof(input) ==0 ) {
+	    char c;
+	    //read a character
+	    fscanf(input, "%c", &c);
+	    
+	   
+	    //print that character to the console
+	    printf("%c\n", c);
+	    
+	}
+	return 0;
 }
