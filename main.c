@@ -2,10 +2,12 @@
 
 int main() {
 	FILE *input;
-	input = fopen("input.txt", "r");
+	input = fopen("alphabet.txt", "r");
 	
 	while(feof(input) ==0 ) {
-	    char c;
+	    int la[];
+	    
+	   
 	    //read a character
 	    fscanf(input, "%c", &c);
 	    
